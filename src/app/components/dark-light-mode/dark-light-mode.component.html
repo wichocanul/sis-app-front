@@ -1,0 +1,7 @@
+<div
+  class="btn-mode"
+  [ngClass]="{'md-dark': !darkModeEnabled, 'md-light': darkModeEnabled}"
+  (click)="changeMode()"
+>
+  <img [src]="imgMode" alt="">
+</div>

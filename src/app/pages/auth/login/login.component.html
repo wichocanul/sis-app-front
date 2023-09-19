@@ -1,7 +1,15 @@
 <div class="container-full">
 
-  <div class="login md-light">
-     <div class="cont-login">
+  <div
+    class="login"
+    [ngClass]="{'md-dark': !lightModeEnabled, 'md-light': lightModeEnabled}"
+  >
+
+    <div class="typeMode">
+      <app-dark-light-mode></app-dark-light-mode>
+    </div>
+
+    <div class="cont-login">
 
       <h1>Login</h1>
       <p class="alert">Sistema de agua Nombre Pueblito</p>
@@ -10,23 +18,41 @@
         <div class="form-container">
 
           <div class="form-group">
-            <input type="text" id="user" class="form-input md-light" placeholder=" ">
+            <input
+              type="text"
+              id="user"
+              class="form-input md-light"
+              placeholder=" "
+              [ngClass]="{'md-dark': !lightModeEnabled, 'md-light': lightModeEnabled}"
+            >
             <label for="user" class="form-label">Usuario:</label>
             <span class="form-line"></span>
           </div>
 
           <div class="form-group">
-            <input type="password" id="password" class="form-input md-light" placeholder=" ">
+            <input
+              type="password"
+              id="password"
+              class="form-input md-light"
+              placeholder=" "
+              [ngClass]="{'md-dark': !lightModeEnabled, 'md-light': lightModeEnabled}"
+            >
             <label for="password" class="form-label">Contraseña:</label>
             <span class="form-line"></span>
           </div>
 
-          <button type="submit" class="btn-login md-dark">Login</button>
+          <button
+            type="submit"
+            class="btn-login md-dark"
+            [ngClass]="{'md-dark': lightModeEnabled, 'md-light': !lightModeEnabled}"
+          >
+            Login
+          </button>
 
         </div>
       </form>
 
-     </div>
+    </div>
   </div>
 
   <div class="background">

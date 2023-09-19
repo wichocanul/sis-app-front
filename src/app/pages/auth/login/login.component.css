@@ -10,10 +10,17 @@
   width: 45%;
   height: 100vh;
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   background-image: radial-gradient(#8b868673 0.5px, #e5e5f700 0.5px);
   background-size: 10px 10px;
+}
+
+.typeMode {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 .cont-login {
