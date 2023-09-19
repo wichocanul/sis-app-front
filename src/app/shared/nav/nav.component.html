@@ -1,6 +1,6 @@
 <nav class="md-dark">
 
-  <div (click)="changeStatusMenu()" class="cont-menu">
+  <div (click)="changeStatusMenu()" class="cont-menu" [ngClass]="{'active': menuEnabled}">
     <div class="line"></div>
     <div class="line"></div>
     <div class="line"></div>

@@ -24,8 +24,33 @@ nav {
   transition: .3s ease all;
 }
 
-.cont-menu:hover .line {
+.cont-menu.active {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cont-menu.active .line:nth-child(1) {
+  display: none;
+}
+
+.cont-menu.active .line {
+  position: absolute;
+  margin: 0;
   background: var(--color-primary);
+}
+
+.cont-menu.active .line:nth-child(2) {
+  transform: rotate(45deg);
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+.cont-menu.active .line:nth-child(3) {
+  transform: rotate(-45deg);
 }
 
 .sesion {
