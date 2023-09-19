@@ -22,12 +22,13 @@ app-nav {
 .container .sidebar {
   width: 300px;
   height: 100vh;
-  padding-top: 40px;
+  padding-top: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
   transform: translateX(0);
   transition: width 0.3s ease-in-out, transform 0.3s ease-in-out;
+  background: var();
 }
 
 .container.sidebar-hidden .sidebar {
@@ -56,10 +57,17 @@ app-nav {
 
 .dinamic-page {
   flex: 1;
+  padding: 10px;
+  border-radius: 10px 0 0 0;
+}
+
+.container.sidebar-hidden .dinamic-page {
+  border-radius: 0 0 0 0;
 }
 
 app-footer {
   height: 50px;
+  padding: 10px;
 }
 
 /* ============================================================

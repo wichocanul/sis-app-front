@@ -1,9 +1,9 @@
-<nav class="md-dark">
+<nav [ngClass]="{'md-dark': lightModeEnabled, 'md-light': !lightModeEnabled}">
 
   <div (click)="changeStatusMenu()" class="cont-menu" [ngClass]="{'active': menuEnabled}">
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
+    <div class="line" [ngClass]="{'md-dark': !lightModeEnabled, 'md-light': lightModeEnabled}"></div>
+    <div class="line" [ngClass]="{'md-dark': !lightModeEnabled, 'md-light': lightModeEnabled}"></div>
+    <div class="line" [ngClass]="{'md-dark': !lightModeEnabled, 'md-light': lightModeEnabled}"></div>
   </div>
 
   <div class="sesion">
@@ -11,7 +11,7 @@
     <p>Luis Pablo</p>
   </div>
 
-  <button class="log-out md-dark">
+  <button class="log-out" [ngClass]="{'md-dark': lightModeEnabled, 'md-light': !lightModeEnabled}">
     Cerrar Sesion
   </button>
 

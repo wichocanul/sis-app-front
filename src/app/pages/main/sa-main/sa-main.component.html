@@ -3,17 +3,17 @@
   <app-nav (statusMenu)="statusMenu($event)"></app-nav>
   <div class="container" [ngClass]="{'sidebar-hidden': sidebarHidden}">
 
-    <div class="sidebar md-dark">
-      <div class="sidebar-cont md-light">
+    <div class="sidebar" [ngClass]="{'md-dark': lightModeEnabled, 'md-light': !lightModeEnabled}">
+      <div class="sidebar-cont" [ngClass]="{'md-dark': !lightModeEnabled, 'md-light': lightModeEnabled}">
         <p>hola</p>
       </div>
     </div>
 
-    <div class="cont-body">
-      <div class="dinamic-page">
+    <div class="cont-body" [ngClass]="{'md-dark': lightModeEnabled, 'md-light': !lightModeEnabled}">
+      <div class="dinamic-page" [ngClass]="{'md-dark': !lightModeEnabled, 'md-light': lightModeEnabled}">
         <router-outlet></router-outlet>
       </div>
-      <app-footer></app-footer>
+      <app-footer [ngClass]="{'md-dark': !lightModeEnabled, 'md-light': lightModeEnabled}"></app-footer>
     </div>
 
   </div>
