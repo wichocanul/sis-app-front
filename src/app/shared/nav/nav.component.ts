@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-nav',
@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class NavComponent {
 
+  menuEnabled: boolean = false;
+
+  @Output() statusMenu = new EventEmitter<boolean>();
+
+  changeStatusMenu() {
+    this.statusMenu.emit(this.menuEnabled);
+    this.menuEnabled = !this.menuEnabled
+  }
+
 }
+

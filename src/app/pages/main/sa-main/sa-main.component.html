@@ -1,3 +1,20 @@
-<app-nav></app-nav>
-<router-outlet></router-outlet>
-<app-footer></app-footer>
+<div class="container-full">
+
+  <app-nav (statusMenu)="statusMenu($event)"></app-nav>
+  <div class="container" [ngClass]="{'sidebar-hidden': sidebarHidden}">
+
+    <div class="sidebar md-dark">
+      <div class="sidebar-cont md-light">
+        <p>hola</p>
+      </div>
+    </div>
+
+    <div class="cont-body">
+      <div class="dinamic-page">
+        <router-outlet></router-outlet>
+      </div>
+      <app-footer></app-footer>
+    </div>
+
+  </div>
+</div>

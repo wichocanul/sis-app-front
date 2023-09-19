@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class SaMainComponent {
 
+  sidebarHidden: boolean = true;
+
+  statusMenu(status: boolean) {
+    this.sidebarHidden = status;
+  }
+
 }
