@@ -14,7 +14,7 @@
       <h1>Login</h1>
       <p class="alert">Sistema de agua Nombre Pueblito</p>
 
-      <form>
+      <!-- <form> -->
         <div class="form-container">
 
           <div class="form-group">
@@ -41,8 +41,16 @@
             <span class="form-line"></span>
           </div>
 
-          <button
+          <!-- <button
             type="submit"
+            class="btn-login md-dark"
+            [ngClass]="{'md-dark': lightModeEnabled, 'md-light': !lightModeEnabled}"
+          >
+            Login
+          </button> -->
+
+          <button
+            (click)="test()"
             class="btn-login md-dark"
             [ngClass]="{'md-dark': lightModeEnabled, 'md-light': !lightModeEnabled}"
           >
@@ -50,7 +58,7 @@
           </button>
 
         </div>
-      </form>
+      <!-- </form> -->
 
     </div>
   </div>

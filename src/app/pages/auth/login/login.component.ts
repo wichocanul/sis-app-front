@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit, QueryList, ViewChildren } from '@angular/core';
+import { Router } from '@angular/router';
 import { DarkLightModeService } from 'src/app/services/darkLightMode/dark-light-mode.service';
 
 @Component({
@@ -12,12 +13,17 @@ export class LoginComponent implements OnInit {
 
   constructor(
     private darkLightmode: DarkLightModeService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
     this.darkLightmode.lightModeEnabled$.subscribe( status => {
       this.lightModeEnabled = status;
     })
+  }
+
+  test() {
+    this.router.navigate(['sa/home'])
   }
 
 }
