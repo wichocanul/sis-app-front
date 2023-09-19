@@ -17,6 +17,9 @@ export class DarkLightModeComponent {
 
   changeMode() {
     this.darkLightMode.statusMode(this.darkModeEnabled)
+
+    this.darkModeEnabled === false ? this.imgMode = 'assets/img/shared/md-light.png' : this.imgMode = 'assets/img/shared/md-dark.png';
+
     this.darkModeEnabled = !this.darkModeEnabled;
   }
 
