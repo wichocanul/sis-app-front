@@ -1,1 +1,50 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: font-primary;
+  src: url(assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  outline: 0;
+  border: 0;
+  font-family: font-primary;
+}
+
+:root {
+  --md-light: #ffffff;
+  --md-dark: #343342;
+
+  /* ### COLORS ### */
+  --color-primary: #ff4045;
+}
+
+.md-light {
+  background: var(--md-light);
+  color: var(--md-dark);
+}
+
+.md-dark {
+  background: var(--md-dark);
+  color: var(--md-light);
+}
+
+/* ============================================================
+DESKTOP
+============================================================ */
+.container-full {
+  width: 100%;
+  height: 100vh;
+}
+
+/* ============================================================
+TABLETS
+============================================================ */
+@media screen and (min-width: 601px) and (max-width: 912px) {}
+
+/* ============================================================
+PHONE
+============================================================ */
+@media screen and (max-width: 600px) {}
