@@ -5,7 +5,29 @@
 
     <div class="sidebar" [ngClass]="{'md-dark': lightModeEnabled, 'md-light': !lightModeEnabled}">
       <div class="sidebar-cont" [ngClass]="{'md-dark': !lightModeEnabled, 'md-light': lightModeEnabled}">
-        <p>hola</p>
+        <div class="btn-tab">
+
+          <!-- TODO: gett routes for the API, need name and route -->
+          <button class="md-dark" routerLink="members" routerLinkActive="active">
+            <img src="assets/img/shared/members.png" alt="icon">
+            <p>Integrantes</p>
+          </button>
+
+          <button class="md-dark" [ngClass]="{'md-dark': lightModeEnabled, 'md-light': !lightModeEnabled}">
+            <img src="assets/img/shared/citizen.png" alt="icon">
+            <p>Ciudadano</p>
+          </button>
+
+          <button class="md-dark" [ngClass]="{'md-dark': lightModeEnabled, 'md-light': !lightModeEnabled}">
+            <img src="assets/img/shared/incidence.png" alt="icon">
+            <p>Incidencia</p>
+          </button>
+
+          <button class="md-dark" [ngClass]="{'md-dark': lightModeEnabled, 'md-light': !lightModeEnabled}">
+            <img src="assets/img/shared/report.png" alt="icon">
+            <p>Reportes</p>
+          </button>
+        </div>
       </div>
     </div>
 
