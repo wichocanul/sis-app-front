@@ -22,8 +22,9 @@ export class LoginComponent implements OnInit {
     })
   }
 
+  //TODO: Delete this method
   test() {
-    this.router.navigate(['sa/home'])
+    this.router.navigate(['sa/members']);
   }
 
 }
