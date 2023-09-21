@@ -13,6 +13,10 @@
   font-family: font-primary;
 }
 
+table {
+  border-collapse: collapse;
+}
+
 :root {
   --md-light: #ffffff;
   --md-dark: #343342;
@@ -40,6 +44,14 @@ DESKTOP
 ============================================================ */
 .container-full {
   width: 100%;
+}
+
+.cont-table {
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  overflow-x: auto;
+  margin: 10px 0;
 }
 
 /* ============================================================
