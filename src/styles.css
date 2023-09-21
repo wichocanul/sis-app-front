@@ -32,7 +32,7 @@ table {
 
 .md-dark {
   background: var(--md-dark);
-  color: var(--md-light);
+  color: #d6d6d6;
 }
 
 .md-light, .md-dark {

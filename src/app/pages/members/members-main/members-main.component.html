@@ -2,7 +2,12 @@
 
   <div class="section-members">
 
-    <h3 class="title md-light">Representantes de Comisión</h3>
+    <h3
+      class="title md-light"
+      [ngClass]="{'md-dark': !lightModeEnabled, 'md-light': lightModeEnabled}"
+    >
+      Representantes de Comisión
+    </h3>
 
     <div class="type-commision">
       <div class="cont-type">
@@ -95,12 +100,22 @@
   </div>
 
   <div class="section-members">
-    <h3 class="title md-light">Equipo de Trabajo</h3>
+    <h3
+      class="title md-light"
+      [ngClass]="{'md-dark': !lightModeEnabled, 'md-light': lightModeEnabled}"
+    >
+      Equipo de Trabajo
+    </h3>
     <app-work-team></app-work-team>
   </div>
 
   <div class="section-members">
-    <h3 class="title md-light">No Participaron</h3>
+    <h3
+      class="title md-light"
+      [ngClass]="{'md-dark': !lightModeEnabled, 'md-light': lightModeEnabled}"
+    >
+      No Participaron
+    </h3>
     <app-dont-work></app-dont-work>
   </div>
 
