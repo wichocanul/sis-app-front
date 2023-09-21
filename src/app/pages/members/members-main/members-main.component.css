@@ -45,7 +45,7 @@
   width: auto;
   padding: 3px 7px;
   background: var(--color-primary);
-  color: #fff;
+  color: var(--text-color-primary);
   font-size: .8rem;
   border-radius: 10px;
   cursor: pointer;
@@ -55,4 +55,5 @@
 
 .cont-table tr td button:hover {
   box-shadow: none;
+  color: var(--text-color-primary);
 }

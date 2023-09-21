@@ -22,7 +22,8 @@ table {
   --md-dark: #343342;
 
   /* ### COLORS ### */
-  --color-primary: #ff4045;
+  --color-primary: #ffc340;
+  --text-color-primary: #000;
 }
 
 .md-light {

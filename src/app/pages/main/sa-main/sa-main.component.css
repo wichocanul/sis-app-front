@@ -62,10 +62,12 @@ app-nav {
 
 .btn-tab button:hover {
   background: var(--color-primary);
+  color: var(--text-color-primary);
 }
 
 .btn-tab button.active {
   background: var(--color-primary);
+  color: var(--text-color-primary);
 }
 
 .btn-tab button img {
