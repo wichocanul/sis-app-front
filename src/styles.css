@@ -39,6 +39,14 @@ table {
   transition: background 0.3s ease;
 }
 
+.alert-ok {
+  background: #39d58a;
+}
+
+.alert-error {
+  background: #ff4045;
+}
+
 /* ============================================================
 DESKTOP
 ============================================================ */
