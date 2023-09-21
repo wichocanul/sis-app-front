@@ -20,11 +20,16 @@
 .cont-type {
   display: flex;
   gap: 10px;
-  margin: 7px 0 15px 0;
+  margin: 7px 0;
 }
 
 .cont-type p:first-child {
   font-weight: bold;
+}
+
+.divider {
+  width: 100%;
+  height: 10px;
 }
 
 .cell-init {
@@ -35,6 +40,11 @@
 .cell-data {
   padding: 0 10px;
   text-align: center;
+  white-space: nowrap;
+}
+
+.cont-table {
+  padding-bottom: 10px;
 }
 
 .cont-table table {

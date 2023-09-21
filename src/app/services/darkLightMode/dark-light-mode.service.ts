@@ -6,7 +6,7 @@ import { BehaviorSubject } from 'rxjs';
 })
 export class DarkLightModeService {
 
-  private lightModeEnabled = new BehaviorSubject<boolean>(true);
+  private lightModeEnabled = new BehaviorSubject<boolean>(this.typeMode());
 
   public lightModeEnabled$ = this.lightModeEnabled.asObservable();
 
@@ -16,5 +16,20 @@ export class DarkLightModeService {
 
     status === true ? this.lightModeEnabled.next(true): this.lightModeEnabled.next(false);
 
+  }
+
+  typeMode(): boolean {
+    let current = ''
+    if(!localStorage.getItem('typeMode')) {
+      localStorage.setItem('typeMode', 'light')
+      current = 'light';
+      return true;
+    }
+    current = localStorage.getItem('typeMode')!;
+    if(current == 'light') {
+      return true
+    } else {
+      return false
+    }
   }
 }
