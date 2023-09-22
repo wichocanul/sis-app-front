@@ -8,14 +8,14 @@
         <div class="btn-tab">
 
           <!-- TODO: gett routes for the API, need name and route -->
-          <button [ngClass]="{'md-dark': lightModeEnabled, 'md-light': !lightModeEnabled}" routerLink="members" routerLinkActive="active">
+          <button [ngClass]="{'md-dark': lightModeEnabled, 'md-light': !lightModeEnabled}" routerLink="integrantes" routerLinkActive="active">
             <img src="assets/img/shared/members.png" alt="icon">
             <p>Integrantes</p>
           </button>
 
-          <button [ngClass]="{'md-dark': lightModeEnabled, 'md-light': !lightModeEnabled}">
+          <button [ngClass]="{'md-dark': lightModeEnabled, 'md-light': !lightModeEnabled}" routerLink="plantilla" routerLinkActive="active">
             <img src="assets/img/shared/citizen.png" alt="icon">
-            <p>Ciudadano</p>
+            <p>Plantilla de trabajo</p>
           </button>
 
           <button [ngClass]="{'md-dark': lightModeEnabled, 'md-light': !lightModeEnabled}">
