@@ -1,0 +1,18 @@
+.btn-add {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-add button {
+  padding: 5px 10px;
+  border-radius: 10px;
+  background: var(--color-primary);
+  color: var(--text-color-primary);
+  box-shadow: -2px 2px 4px #4c4c4c;
+  transition: .3s ease all;
+}
+
+.btn-add button:hover {
+  box-shadow: none;
+}

@@ -24,6 +24,7 @@ table {
   /* ### COLORS ### */
   --color-primary: #ffc340;
   --text-color-primary: #000;
+  --alert-color: #ff4045;
 }
 
 .md-light {
@@ -62,6 +63,71 @@ DESKTOP
   overflow-x: auto;
   margin: 10px 0;
 }
+
+
+/* ================= MODAL WINDOW ====================== */
+
+.modal-window-container {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  /* display: flex; */
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(20, 20, 20, 0.798);
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.modal-window {
+  width: 40%;
+  height: 60%;
+  border-radius: 10px;
+  overflow: auto;
+}
+
+.header-window {
+  width: 100%;
+  background: #b2b2b2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 15px;
+}
+
+.header-window .exit {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header-window .exit .line {
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  display: flex;
+  background: #000;
+  border-radius: 5px;
+  transition: .3s ease-in-out all;
+}
+
+.header-window .exit:hover  .line {
+  background: var(--alert-color);
+}
+
+.exit .line:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.exit .line:nth-child(2) {
+  transform: rotate(-45deg);
+}
+
 
 /* ============================================================
 TABLETS
