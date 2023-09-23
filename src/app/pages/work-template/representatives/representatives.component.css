@@ -1,35 +1,5 @@
-.section-members {
-  margin: 15px 0 40px 0;
-  width: 100%;
-  border: 1px solid #a2a2a245;
-  padding: 15px 10px 5px 10px;
-  border-radius: 5px;
-  font-size: .9rem;
-  position: relative;
-}
-
-.section-members .title {
-  text-align: center;
-  width: 280px;
+.cont-table {
   padding: 5px 0;
-  margin: auto;
-  margin-top: -30px;
-  border-radius: 5px;
-}
-
-.cont-type {
-  display: flex;
-  gap: 10px;
-  margin: 7px 0;
-}
-
-.cont-type p:first-child {
-  font-weight: bold;
-}
-
-.divider {
-  width: 100%;
-  height: 10px;
 }
 
 .cell-init {
@@ -43,16 +13,13 @@
   white-space: nowrap;
 }
 
-.cont-table {
-  padding-bottom: 10px;
-}
-
 .cont-table table {
   width: auto;
 }
 
 .cont-table tr td button {
   width: auto;
+  margin-left: 10px;
   padding: 3px 7px;
   background: var(--color-primary);
   color: var(--text-color-primary);

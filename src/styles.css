@@ -24,7 +24,9 @@ table {
   /* ### COLORS ### */
   --color-primary: #ffc340;
   --text-color-primary: #000;
-  --alert-color: #ff4045;
+  --alert-error: #ff4045;
+  --alert-ok: #0e983c;
+
 }
 
 .md-light {
@@ -42,7 +44,7 @@ table {
 }
 
 .alert-ok {
-  background: #39d58a;
+  background: #0e983c;
 }
 
 .alert-error {
@@ -126,6 +128,31 @@ DESKTOP
 
 .exit .line:nth-child(2) {
   transform: rotate(-45deg);
+}
+
+/* ================= SECTION ====================== */
+
+.section-container {
+  margin: 15px 0 40px 0;
+  width: 100%;
+  border: 1px solid #a2a2a245;
+  padding: 15px 10px 5px 10px;
+  border-radius: 5px;
+  font-size: .9rem;
+  position: relative;
+}
+
+.section-container .section-title {
+  text-align: center;
+  width: 280px;
+  padding: 5px 0;
+  margin: auto;
+  margin-top: -30px;
+  border-radius: 5px;
+}
+
+.section-body {
+  width: 100%;
 }
 
 

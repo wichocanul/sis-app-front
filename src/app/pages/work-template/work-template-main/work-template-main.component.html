@@ -1,1 +1,45 @@
-<p>work-template-main works!</p>
+<div class="container-full">
+
+  <div class="not-period" *ngIf="currentPeriod">
+    <h1>Actualmente no hay un periodo en curso, ¿quieres crear uno?</h1>
+
+    <button>Crear Periodo</button>
+  </div>
+
+  <div class="section-container">
+
+    <h3
+      class="section-title md-light"
+      [ngClass]="{'md-dark': !lightModeEnabled, 'md-light': lightModeEnabled}"
+    >
+      Periodo Actual
+    </h3>
+
+    <div class="section-body">
+      <div class="data">
+        <p><span>Tipo de Comision:</span> Agua Potable</p>
+        <p><span>Inicio de Periodo: </span> 12 - 01 - 2023</p>
+        <p><span>Final de Periodo Estimado:</span> 12 - 12 - 2023</p>
+      </div>
+      <div class="cont-btns">
+        <button>Editar Periodo</button>
+        <button>Terminar Periodo</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="section-container">
+
+    <h3
+      class="section-title md-light"
+      [ngClass]="{'md-dark': !lightModeEnabled, 'md-light': lightModeEnabled}"
+    >
+      Representantes de Comisión
+    </h3>
+
+    <app-representatives></app-representatives>
+
+  </div>
+
+</div>
