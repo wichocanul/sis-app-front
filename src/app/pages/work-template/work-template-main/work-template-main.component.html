@@ -42,4 +42,31 @@
 
   </div>
 
+  <div class="section-container">
+
+    <h3
+      class="section-title md-light"
+      [ngClass]="{'md-dark': !lightModeEnabled, 'md-light': lightModeEnabled}"
+    >
+      Equipo de Trabajo
+    </h3>
+
+    <app-work-team></app-work-team>
+
+  </div>
+
+
+  <div class="section-container">
+
+    <h3
+      class="section-title md-light"
+      [ngClass]="{'md-dark': !lightModeEnabled, 'md-light': lightModeEnabled}"
+    >
+      No Participaron
+    </h3>
+
+    <app-not-work></app-not-work>
+
+  </div>
+
 </div>

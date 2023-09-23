@@ -1,0 +1,53 @@
+tr.tr-title {
+  background: #929292;
+}
+
+.cell-init {
+  font-weight: bold;
+  width: auto;
+  text-align: start;
+  padding: 5px 10px;
+}
+
+th.cell-action {
+  font-weight: bold;
+  width: auto;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.cell-data {
+  padding: 3px 10px;
+}
+
+.cont-table table {
+  width: 100%;
+}
+
+.btn-td {
+  height: 30px;
+  margin: auto;
+  text-align: center;
+}
+
+.tr-data {
+  height: 30px;
+}
+
+.tr-data:hover {
+  background: #c1c1c130;
+}
+
+tr button {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: .8rem;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+tr button img {
+  width: 52%;
+}
