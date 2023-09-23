@@ -6,66 +6,70 @@
     <button>Crear Periodo</button>
   </div>
 
-  <div class="section-container">
+  <div *ngIf="!currentPeriod">
 
-    <h3
-      class="section-title md-light"
-      [ngClass]="{'md-dark': !lightModeEnabled, 'md-light': lightModeEnabled}"
-    >
-      Periodo Actual
-    </h3>
+    <div class="section-container">
 
-    <div class="section-body">
-      <div class="data">
-        <p><span>Tipo de Comision:</span> Agua Potable</p>
-        <p><span>Inicio de Periodo: </span> 12 - 01 - 2023</p>
-        <p><span>Final de Periodo Estimado:</span> 12 - 12 - 2023</p>
+      <h3
+        class="section-title md-light"
+        [ngClass]="{'md-dark': !lightModeEnabled, 'md-light': lightModeEnabled}"
+      >
+        Periodo Actual
+      </h3>
+
+      <div class="section-body">
+        <div class="data">
+          <p><span>Tipo de Comision:</span> Agua Potable</p>
+          <p><span>Inicio de Periodo: </span> 12 - 01 - 2023</p>
+          <p><span>Final de Periodo Estimado:</span> 12 - 12 - 2023</p>
+        </div>
+        <div class="cont-btns">
+          <button>Editar Periodo</button>
+          <button>Terminar Periodo</button>
+        </div>
       </div>
-      <div class="cont-btns">
-        <button>Editar Periodo</button>
-        <button>Terminar Periodo</button>
-      </div>
+
     </div>
 
-  </div>
+    <div class="section-container">
 
-  <div class="section-container">
+      <h3
+        class="section-title md-light"
+        [ngClass]="{'md-dark': !lightModeEnabled, 'md-light': lightModeEnabled}"
+      >
+        Representantes de Comisión
+      </h3>
 
-    <h3
-      class="section-title md-light"
-      [ngClass]="{'md-dark': !lightModeEnabled, 'md-light': lightModeEnabled}"
-    >
-      Representantes de Comisión
-    </h3>
+      <app-representatives></app-representatives>
 
-    <app-representatives></app-representatives>
+    </div>
 
-  </div>
+    <div class="section-container">
 
-  <div class="section-container">
+      <h3
+        class="section-title md-light"
+        [ngClass]="{'md-dark': !lightModeEnabled, 'md-light': lightModeEnabled}"
+      >
+        Equipo de Trabajo
+      </h3>
 
-    <h3
-      class="section-title md-light"
-      [ngClass]="{'md-dark': !lightModeEnabled, 'md-light': lightModeEnabled}"
-    >
-      Equipo de Trabajo
-    </h3>
+      <app-work-team></app-work-team>
 
-    <app-work-team></app-work-team>
-
-  </div>
+    </div>
 
 
-  <div class="section-container">
+    <div class="section-container">
 
-    <h3
-      class="section-title md-light"
-      [ngClass]="{'md-dark': !lightModeEnabled, 'md-light': lightModeEnabled}"
-    >
-      No Participaron
-    </h3>
+      <h3
+        class="section-title md-light"
+        [ngClass]="{'md-dark': !lightModeEnabled, 'md-light': lightModeEnabled}"
+      >
+        No Participaron
+      </h3>
 
-    <app-not-work></app-not-work>
+      <app-not-work></app-not-work>
+
+    </div>
 
   </div>
 

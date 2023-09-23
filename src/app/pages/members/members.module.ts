@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { MembersMainComponent } from './members-main/members-main.component';
 import { WorkTeamComponent } from './work-team/work-team.component';
 import { DontWorkComponent } from './dont-work/dont-work.component';
-import { AddMemberComponent } from './add-member/add-member.component';
 
 
 
@@ -12,7 +11,6 @@ import { AddMemberComponent } from './add-member/add-member.component';
     MembersMainComponent,
     WorkTeamComponent,
     DontWorkComponent,
-    AddMemberComponent
   ],
   imports: [
     CommonModule
