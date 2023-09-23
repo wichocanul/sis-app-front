@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-citizens-modal',
@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./citizens-modal.component.css']
 })
 export class CitizensModalComponent {
+
+  searchCitizen: string = ' ';
+  modalEnabled: boolean = false;
+  @Input() titleModal: string = '';
+
+  statusModal() {
+    this.modalEnabled = !this.modalEnabled;
+  }
 
 }

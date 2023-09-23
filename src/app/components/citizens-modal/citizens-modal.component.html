@@ -1,20 +1,49 @@
 <div class="btn-add">
-  <button>Agregar miembro</button>
+  <button (click)="statusModal()">{{ titleModal }}</button>
 </div>
 
 
-<div class="modal-window-container">
+<div [ngClass]="{'modal-window-container': modalEnabled, 'modal-disabled': !modalEnabled}">
   <div class="modal-window md-light">
 
     <div class="header-window">
       <div></div>
-      <h4>Agregar miembro</h4>
-      <div class="exit">
+      <h4>{{ titleModal }}</h4>
+      <div (click)="statusModal()" class="exit">
         <div class="line"></div>
         <div class="line"></div>
       </div>
     </div>
 
+    <div class="body-modal">
+
+      <div class="form-group">
+        <input
+          type="text"
+          id="citizen"
+          class="form-input md-light"
+          [placeholder]="searchCitizen"
+        >
+        <label for="citizen">Buscar ciudadano</label>
+      </div>
+
+      <div class="citizen-list">
+        <div class="citizen">
+          <p class="name">Luis Pablo Canul Garcia</p>
+          <p>Calle San Agustin Oriente</p>
+        </div>
+        <div class="citizen">
+          <p class="name">Luis Pablo Canul Garcia</p>
+          <p>Calle San Agustin Oriente</p>
+        </div>
+        <div class="citizen">
+          <p class="name">Luis Pablo Canul Garcia</p>
+          <p>Calle San Agustin Oriente</p>
+          <p>No Asignado</p>
+        </div>
+      </div>
+
+    </div>
 
   </div>
 </div>
