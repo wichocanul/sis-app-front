@@ -9,7 +9,9 @@
   border-radius: 10px;
   background: var(--color-primary);
   color: var(--text-color-primary);
-  box-shadow: -2px 2px 4px #4c4c4c;
+  cursor: pointer;
+  box-shadow: -2px 2px 4px #606060;
+  margin-bottom: 5px;
   transition: .3s ease all;
 }
 
