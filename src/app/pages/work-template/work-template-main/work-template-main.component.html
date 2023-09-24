@@ -1,12 +1,12 @@
 <div class="container-full">
 
-  <div class="not-period" *ngIf="currentPeriod">
+  <div class="not-period" *ngIf="!currentPeriod">
     <h1>Actualmente no hay un periodo en curso, ¿quieres crear uno?</h1>
 
     <button>Crear Periodo</button>
   </div>
 
-  <div *ngIf="!currentPeriod">
+  <div *ngIf="currentPeriod">
 
     <div class="section-container">
 
@@ -25,7 +25,7 @@
         </div>
         <div class="cont-btns">
           <button>Editar Periodo</button>
-          <button>Terminar Periodo</button>
+          <button (click)="endPeriod()">Terminar Periodo</button>
         </div>
       </div>
 
