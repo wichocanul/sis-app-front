@@ -1,5 +1,5 @@
 <div class="btn-add">
-  <button (click)="statusModal()">{{ titleModal }}</button>
+  <button (click)="statusModal()">{{ titleButton }}</button>
 </div>
 
 
@@ -20,11 +20,11 @@
       <div class="form-group">
         <input
           type="text"
-          id="citizen"
+          [id]="titleModal"
           class="form-input md-light"
           [placeholder]="searchCitizen"
         >
-        <label for="citizen">Buscar ciudadano</label>
+        <label [for]="titleModal">Buscar ciudadano</label>
       </div>
 
       <div class="citizen-list">

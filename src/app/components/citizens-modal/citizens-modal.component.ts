@@ -8,7 +8,9 @@ import { Component, Input } from '@angular/core';
 export class CitizensModalComponent {
 
   searchCitizen: string = ' ';
+  subtitle: string = 'hola';
   modalEnabled: boolean = false;
+  @Input() titleButton: string = '';
   @Input() titleModal: string = '';
 
   statusModal() {

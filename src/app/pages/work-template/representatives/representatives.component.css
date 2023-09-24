@@ -1,5 +1,5 @@
 .cont-table {
-  padding: 5px 0;
+  padding: 1px 0;
 }
 
 .cell-init {
@@ -8,7 +8,7 @@
 }
 
 .cell-data {
-  padding: 0 10px;
+  padding: 0 25px 0 0;
   text-align: center;
   white-space: nowrap;
 }
@@ -17,20 +17,6 @@
   width: auto;
 }
 
-.cont-table tr td button {
+.cont-table tr td.change {
   width: auto;
-  margin-left: 10px;
-  padding: 3px 7px;
-  background: var(--color-primary);
-  color: var(--text-color-primary);
-  font-size: .8rem;
-  border-radius: 10px;
-  cursor: pointer;
-  box-shadow: -2px 2px 4px #606060;
-  transition: .3s ease all;
-}
-
-.cont-table tr td button:hover {
-  box-shadow: none;
-  color: var(--text-color-primary);
 }
