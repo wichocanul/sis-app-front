@@ -4,7 +4,7 @@
 
 
 <div [ngClass]="{'modal-window-container': modalEnabled, 'modal-disabled': !modalEnabled}">
-  <div class="modal-window md-light">
+  <div class="modal-window" [ngClass]="{'md-light': lightModeEnabled, 'md-dark': !lightModeEnabled}">
 
     <div class="header-window">
       <div></div>
@@ -21,14 +21,16 @@
         <input
           type="text"
           [id]="titleModal"
-          class="form-input md-light"
-          [placeholder]="searchCitizen"
+          class="form-input"
+          [ngClass]="{'md-light': lightModeEnabled, 'md-dark': !lightModeEnabled}"
+          placeholder=" "
+          [value]="searchCitizen"
         >
         <label [for]="titleModal">Buscar ciudadano</label>
       </div>
 
-      <div class="citizen-list">
-        <div class="citizen">
+      <div class="citizen-list" [ngClass]="{'citizen-list-light': lightModeEnabled, 'citizen-list-dark': !lightModeEnabled}">
+        <div class="citizen" (click)="changeName('Luis Pablo Canul Garcia')">
           <p class="name">Luis Pablo Canul Garcia</p>
           <p>Calle San Agustin Oriente</p>
         </div>
@@ -43,6 +45,13 @@
         </div>
       </div>
 
+    </div>
+
+    <div class="footer-modal">
+      <div class="cont-btns">
+        <button>Seleccionar</button>
+        <button>Cancelar</button>
+      </div>
     </div>
 
   </div>
