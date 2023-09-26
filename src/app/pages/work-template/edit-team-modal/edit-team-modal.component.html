@@ -1,0 +1,68 @@
+<button (click)="statusModal()" class="alert-ok btn-edit"><img src="assets/img/shared/edit.png" alt=""></button>
+
+<div [ngClass]="{'modal-window-container': modalEnabled, 'modal-disabled': !modalEnabled}">
+  <div class="modal-window" [ngClass]="{'md-light': lightModeEnabled, 'md-dark': !lightModeEnabled}">
+
+    <div class="header-window">
+      <div></div>
+      <h4> {{ titleModal }} </h4>
+      <div (click)="statusModal()" class="exit">
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </div>
+
+    <div class="body-modal">
+
+      <form>
+
+        <div class="form-group">
+          <input
+            type="text"
+            id="'name{{titleModal}}-{{currentCitizen.id}}'"
+            class="form-input"
+            [ngClass]="{'md-light': lightModeEnabled, 'md-dark': !lightModeEnabled}"
+            placeholder=" "
+            [value]="currentCitizen.name"
+            disabled
+          >
+          <label for="'name{{titleModal}}-{{currentCitizen.id}}'">Nombre:</label>
+        </div>
+
+        <div class="form-group">
+          <input
+            type="text"
+            id="'position{{titleModal}}-{{currentCitizen.id}}'"
+            class="form-input"
+            [ngClass]="{'md-light': lightModeEnabled, 'md-dark': !lightModeEnabled}"
+            placeholder=" "
+            [value]="currentCitizen.puesto"
+            disabled
+          >
+          <label for="'position{{titleModal}}-{{currentCitizen.id}}'">Puesto:</label>
+        </div>
+
+        <div class="form-group">
+          <input
+            type="text"
+            id="'note{{titleModal}}-{{currentCitizen.id}}'"
+            class="form-input"
+            [ngClass]="{'md-light': lightModeEnabled, 'md-dark': !lightModeEnabled}"
+            placeholder=" "
+          >
+          <label for="'note{{titleModal}}-{{currentCitizen.id}}'">{{textInput}}:</label>
+        </div>
+
+      </form>
+
+    </div>
+
+    <div class="footer-modal">
+      <div class="cont-btns">
+        <button>Guardar</button>
+        <button (click)="statusModal()">Cancelar</button>
+      </div>
+    </div>
+
+  </div>
+</div>

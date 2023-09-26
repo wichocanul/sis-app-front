@@ -1,0 +1,164 @@
+button.btn-edit {
+  width: 21px;
+  height: 21px;
+  margin: auto;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+button.btn-edit img {
+  width: 52%;
+}
+
+
+/* ================= MODAL WINDOW ====================== */
+
+.modal-window-container {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(20, 20, 20, 0.798);
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: .2s ease-in opacity;
+  opacity: 1;
+}
+
+.modal-disabled {
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.modal-window {
+  width: 30%;
+  height: auto;
+  max-height: 500px;
+  border-radius: 10px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-window {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px;
+  background: #b2b2b2;
+  color: #252525;
+}
+
+.header-window .exit {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header-window .exit .line {
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  display: flex;
+  background: #000;
+  border-radius: 5px;
+  transition: .3s ease all;
+}
+
+.header-window .exit:hover .line {
+  background: var(--alert-error);
+}
+
+.exit .line:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.exit .line:nth-child(2) {
+  transform: rotate(-45deg);
+}
+
+.body-modal {
+  width: 100%;
+  overflow-y: auto;
+  padding: 10px;
+  flex: 1;
+}
+
+.form-group {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.form-group input {
+  width: 100%;
+  background: none;
+  font-size: 1rem;
+  padding: .6em .3em;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label {
+  transform: translateY(-12px) scale(.7);
+  transform-origin: left top;
+}
+
+.form-group label {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: translateY(10px);
+  transition: transform .5s, #00ffff .3s;
+  transition: .3s ease all;
+}
+
+.footer-modal {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 10px;
+  margin-bottom: 5px;
+}
+
+.footer-modal .cont-btns {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-modal .cont-btns button {
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: -2px 2px 4px #606060;
+  transition: .3s ease all;
+}
+
+.footer-modal .cont-btns button:hover {
+  box-shadow: none;
+}
+
+.cont-btns button:nth-child(1) {
+  background: var(--alert-ok);
+  color: #fff;
+}
+
+.cont-btns button:nth-child(2) {
+  background: var(--alert-error);
+  color: #fff;
+}

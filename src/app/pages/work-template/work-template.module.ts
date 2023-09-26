@@ -5,6 +5,7 @@ import { RepresentativesComponent } from './representatives/representatives.comp
 import { WorkTeamComponent } from './work-team/work-team.component';
 import { NotWorkComponent } from './not-work/not-work.component';
 import { ComponentsModule } from 'src/app/components/components.module';
+import { EditTeamModalComponent } from './edit-team-modal/edit-team-modal.component';
 
 
 
@@ -13,7 +14,8 @@ import { ComponentsModule } from 'src/app/components/components.module';
     WorkTemplateMainComponent,
     RepresentativesComponent,
     WorkTeamComponent,
-    NotWorkComponent
+    NotWorkComponent,
+    EditTeamModalComponent
   ],
   imports: [
     CommonModule,

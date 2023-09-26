@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class NotWorkComponent {
 
+  userEdit: any[] = [
+    {
+      id: 1,
+      name: 'Javier Florez Garcia',
+      puesto: 'Responsable de calle',
+      observacion: ''
+    },
+    {
+      id: 2,
+      name: 'Victor Zeferino Garcia',
+      puesto: 'Apoyo',
+      observacion: ''
+    }
+  ]
+
 }

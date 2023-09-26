@@ -13,10 +13,13 @@
       <td class="cell-data">Responsable de Calle</td>
       <td class="cell-data"></td>
       <td class="btn-td">
-        <button class="alert-ok"><img src="assets/img/shared/edit.png" alt=""></button>
+        <app-edit-team-modal
+          [titleModal]="'Equipo de trabajo'"
+          [currentCitizen]="userEdit[0]"
+        ></app-edit-team-modal>
       </td>
       <td class="btn-td">
-        <button class="alert-error">X</button>
+        <button (click)="removeCitizen()" class="alert-error">X</button>
       </td>
     </tr>
     <tr class="tr-data">
@@ -24,10 +27,13 @@
       <td class="cell-data">Apoyo</td>
       <td class="cell-data"></td>
       <td class="btn-td">
-        <button class="alert-ok"><img src="assets/img/shared/edit.png" alt=""></button>
+        <app-edit-team-modal
+          [titleModal]="'Equipo de trabajo'"
+          [currentCitizen]="userEdit[1]"
+        ></app-edit-team-modal>
       </td>
       <td class="btn-td">
-        <button class="alert-error">X</button>
+        <button (click)="removeCitizen()" class="alert-error">X</button>
       </td>
     </tr>
     <tr class="tr-data">
@@ -38,7 +44,7 @@
         <button class="alert-ok"><img src="assets/img/shared/edit.png" alt=""></button>
       </td>
       <td class="btn-td">
-        <button class="alert-error">X</button>
+        <button (click)="removeCitizen()" class="alert-error">X</button>
       </td>
     </tr>
     <tr class="tr-data">
@@ -49,7 +55,7 @@
         <button class="alert-ok"><img src="assets/img/shared/edit.png" alt=""></button>
       </td>
       <td class="btn-td">
-        <button class="alert-error">X</button>
+        <button (click)="removeCitizen()" class="alert-error">X</button>
       </td>
     </tr>
   </table>

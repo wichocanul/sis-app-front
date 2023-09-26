@@ -30,7 +30,6 @@ export class CitizensModalComponent {
   }
 
   changeName(name: string) {
-    console.log(name)
     this.searchCitizen = name;
   }
 
