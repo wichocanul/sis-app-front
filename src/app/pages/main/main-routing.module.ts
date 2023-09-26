@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { SaMainComponent } from './sa-main/sa-main.component';
 import { MembersMainComponent } from '../members/members-main/members-main.component';
 import { WorkTemplateMainComponent } from '../work-template/work-template-main/work-template-main.component';
+import { CitizensMainComponent } from '../citizens/citizens-main/citizens-main.component';
 
 const routes: Routes = [
   {
@@ -20,6 +21,10 @@ const routes: Routes = [
       {
         path: 'plantilla',
         component: WorkTemplateMainComponent
+      },
+      {
+        path: 'ciudadanos',
+        component: CitizensMainComponent
       }
     ]
   }

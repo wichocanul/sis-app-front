@@ -42,28 +42,3 @@
   text-align: center;
   white-space: nowrap;
 }
-
-.cont-table {
-  padding-bottom: 10px;
-}
-
-.cont-table table {
-  width: auto;
-}
-
-.cont-table tr td button {
-  width: auto;
-  padding: 3px 7px;
-  background: var(--color-primary);
-  color: var(--text-color-primary);
-  font-size: .8rem;
-  border-radius: 10px;
-  cursor: pointer;
-  box-shadow: -2px 2px 4px #606060;
-  transition: .3s ease all;
-}
-
-.cont-table tr td button:hover {
-  box-shadow: none;
-  color: var(--text-color-primary);
-}

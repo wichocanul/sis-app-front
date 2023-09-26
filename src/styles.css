@@ -60,10 +60,9 @@ DESKTOP
 
 .cont-table {
   width: 100%;
+  height: auto;
   border-radius: 5px;
-  overflow: hidden;
   overflow-x: auto;
-  margin: 10px 0;
 }
 
 /* ================= SECTION ====================== */
@@ -71,6 +70,7 @@ DESKTOP
 .section-container {
   margin: 15px 0 40px 0;
   width: 100%;
+  height: auto;
   border: 1px solid #a2a2a245;
   padding: 15px 10px 5px 10px;
   border-radius: 5px;
@@ -81,6 +81,7 @@ DESKTOP
 .section-container .section-title {
   text-align: center;
   width: 280px;
+  height: auto;
   padding: 5px 0;
   margin: auto;
   margin-top: -30px;
