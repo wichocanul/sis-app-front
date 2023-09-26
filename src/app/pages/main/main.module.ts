@@ -6,6 +6,7 @@ import { SaMainComponent } from './sa-main/sa-main.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { MembersModule } from '../members/members.module';
 import { WorkTemplateModule } from '../work-template/work-template.module';
+import { CitizensModule } from '../citizens/citizens.module';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { WorkTemplateModule } from '../work-template/work-template.module';
     MainRoutingModule,
     SharedModule,
     MembersModule,
-    WorkTemplateModule
+    WorkTemplateModule,
+    CitizensModule
   ]
 })
 export class MainModule { }

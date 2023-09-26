@@ -1,0 +1,28 @@
+table {
+  width: 100%;
+  font-size: .9rem;
+  border-collapse: collapse;
+}
+
+tr.tr-title {
+  background: #929292;
+}
+
+.cell-init {
+  font-weight: bold;
+  width: auto;
+  text-align: start;
+  padding: 5px 10px;
+}
+
+.cell-data {
+  padding: 3px 10px;
+}
+
+.tr-data {
+  height: 30px;
+}
+
+.tr-data:hover {
+  background: #c1c1c130;
+}

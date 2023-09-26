@@ -1,19 +1,15 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { DarkLightModeService } from 'src/app/services/darkLightMode/dark-light-mode.service';
 
 @Component({
-  selector: 'app-citizens-modal',
-  templateUrl: './citizens-modal.component.html',
-  styleUrls: ['./citizens-modal.component.css']
+  selector: 'app-create-citizen',
+  templateUrl: './create-citizen.component.html',
+  styleUrls: ['./create-citizen.component.css']
 })
-export class CitizensModalComponent implements OnInit {
+export class CreateCitizenComponent implements OnInit {
 
-  searchCitizen: string = '';
-  subtitle: string = 'hola';
   modalEnabled: boolean = false;
   lightModeEnabled: boolean = true;
-  @Input() titleButton: string = '';
-  @Input() titleModal: string = '';
 
   constructor(
     private darkLightmode: DarkLightModeService,
@@ -27,10 +23,6 @@ export class CitizensModalComponent implements OnInit {
 
   statusModal() {
     this.modalEnabled = !this.modalEnabled;
-  }
-
-  changeName(name: string) {
-    this.searchCitizen = name;
   }
 
 }

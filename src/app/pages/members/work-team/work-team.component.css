@@ -9,25 +9,12 @@ tr.tr-title {
   padding: 5px 10px;
 }
 
-th.cell-action {
-  font-weight: bold;
-  width: auto;
-  text-align: center;
-  padding: 5px 0;
-}
-
 .cell-data {
   padding: 3px 10px;
 }
 
 .cont-table table {
   width: 100%;
-}
-
-.btn-td {
-  height: 30px;
-  margin: auto;
-  text-align: center;
 }
 
 .tr-data {
