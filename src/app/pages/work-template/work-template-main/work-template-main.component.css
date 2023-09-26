@@ -64,12 +64,7 @@
   box-shadow: none;
 }
 
-.cont-btns button:nth-child(1) {
-  background: var(--alert-ok);
-  color: #ffffff;
-}
-
-.cont-btns button:nth-child(2) {
+.cont-btns button{
   background: var(--alert-error);
   color: #ffffff;
 }
