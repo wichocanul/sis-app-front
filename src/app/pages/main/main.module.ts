@@ -7,6 +7,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { MembersModule } from '../members/members.module';
 import { WorkTemplateModule } from '../work-template/work-template.module';
 import { CitizensModule } from '../citizens/citizens.module';
+import { IncidentsModule } from '../incidents/incidents.module';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { CitizensModule } from '../citizens/citizens.module';
     SharedModule,
     MembersModule,
     WorkTemplateModule,
-    CitizensModule
+    CitizensModule,
+    IncidentsModule
   ]
 })
 export class MainModule { }

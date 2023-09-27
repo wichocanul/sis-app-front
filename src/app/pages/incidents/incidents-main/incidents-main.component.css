@@ -1,0 +1,113 @@
+.form-group {
+  position: relative;
+  margin-top: 10px;
+}
+
+.form-group input {
+  width: 100%;
+  background: none;
+  font-size: 1rem;
+  padding: .6em .3em;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label {
+  transform: translateY(-12px) scale(.7);
+  transform-origin: left top;
+}
+
+.form-group label {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: translateY(10px);
+  transition: transform .5s, #00ffff .3s;
+  transition: .3s ease all;
+}
+
+.table-disabled {
+  display: none;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+table {
+  width: 100%;
+  font-size: .9rem;
+  border-collapse: collapse;
+}
+
+tr.tr-title {
+  background: #929292;
+}
+
+.cell-init {
+  font-weight: bold;
+  width: auto;
+  text-align: start;
+  padding: 5px 10px;
+}
+
+.cell-data {
+  padding: 3px 10px;
+}
+
+.tr-data {
+  height: 30px;
+}
+
+.tr-data:hover {
+  background: #c1c1c130;
+}
+
+
+/* ========================================================
+CITIZEND SECTION
+======================================================== */
+.citizen-current {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: .9rem;
+}
+
+.citizen-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.citizen-section p {
+  margin: 5px 0;
+}
+
+.citizen-section p span {
+  font-weight: bold;
+}
+
+.btns-incidents {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.btns-incidents button {
+  padding: 5px 10px;
+  border-radius: 10px;
+  background: #57b3dd;
+  cursor: pointer;
+}

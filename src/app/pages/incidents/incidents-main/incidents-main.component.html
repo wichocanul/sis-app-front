@@ -1,1 +1,121 @@
-<p>incidents-main works!</p>
+<div class="container-full" *ngIf="!searchValue">
+  <div class="form-group">
+    <input
+      type="text"
+      id="search"
+      class="form-input"
+      [ngClass]="{'md-dark': !lightModeEnabled, 'md-light': lightModeEnabled}"
+      placeholder=" "
+    >
+    <label for="search">Buscar ciudadano</label>
+  </div>
+
+  <div class="table-disabled cont-table">
+    <table>
+      <tr class="tr-title">
+        <th class="cell-init">Nombre</th>
+        <th class="cell-init">Apellido Paterno</th>
+        <th class="cell-init">Apellido Materno</th>
+        <th class="cell-init">CURP</th>
+        <th class="cell-init">INE</th>
+        <th class="cell-init">Direccion</th>
+        <th class="cell-init">Calle</th>
+        <th class="cell-init">Tipo de servicio</th>
+        <th class="cell-init">Observaciones</th>
+      </tr>
+
+      <tr class="tr-data">
+        <td class="cell-data">Javier</td>
+        <td class="cell-data">Flores</td>
+        <td class="cell-data">Ibañes</td>
+        <td class="cell-data">FLIJALGOMAS</td>
+        <td class="cell-data">123SDFES</td>
+        <td class="cell-data">Abasolo 22</td>
+        <td class="cell-data">Calle 3</td>
+        <td class="cell-data">Agua</td>
+        <td class="cell-data"></td>
+      </tr>
+    </table>
+  </div>
+
+</div>
+
+<div *ngIf="searchValue">
+
+    <div class="citizen-current">
+      <div class="citizen-section">
+        <p><span>Nombre: </span> Luis Pablo Canul Garcia</p>
+        <p><span>Direccion: </span> Calle Niños Heroes #7</p>
+        <p><span>CURP: </span> CAGL91235233AS</p>
+      </div>
+      <div class="citizen-section">
+        <p><span>Cuota: </span> $500</p>
+        <p><span>Telefono: </span> 2222761817</p>
+        <p><span>Correo: </span> wichocanul07@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="btns-incidents">
+      <button>Registro de Incidencia</button>
+      <button>Registro de Acuerdo</button>
+    </div>
+
+    <div class="cont-table">
+      <p class="title">Incidencias</p>
+      <table>
+        <tr class="tr-title">
+          <th class="cell-init">#</th>
+          <th class="cell-init">Documento</th>
+          <th class="cell-init">Incidencia</th>
+          <th class="cell-init">Fecha</th>
+          <th class="cell-init">Quien Recibio</th>
+          <th class="cell-init">Parentezco</th>
+          <th class="cell-init">Estatus</th>
+          <th class="cell-init">Observaciones</th>
+          <th class="cell-init">Impresion</th>
+        </tr>
+
+        <tr class="tr-data">
+          <td class="cell-data">1</td>
+          <td class="cell-data">Citatorio</td>
+          <td class="cell-data">Falta de pago</td>
+          <td class="cell-data">27/09/2023</td>
+          <td class="cell-data">Sr. Juan</td>
+          <td class="cell-data">Papá</td>
+          <td class="cell-data">No se presento</td>
+          <td class="cell-data"></td>
+          <td class="cell-data">Imprimir</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="cont-table">
+      <p class="title">Acuerdos</p>
+      <table>
+        <tr class="tr-title">
+          <th class="cell-init">#</th>
+          <th class="cell-init">Documento</th>
+          <th class="cell-init">Incidencia</th>
+          <th class="cell-init">Fecha</th>
+          <th class="cell-init">Acuerdo</th>
+          <th class="cell-init">Fecha Acuerdo</th>
+          <th class="cell-init">Estatus</th>
+          <th class="cell-init">Observaciones</th>
+          <th class="cell-init">Impresion</th>
+        </tr>
+
+        <tr class="tr-data">
+          <td class="cell-data">1</td>
+          <td class="cell-data">Citatorio</td>
+          <td class="cell-data">Falta de pago</td>
+          <td class="cell-data">27/09/2023</td>
+          <td class="cell-data">Sr. Juan</td>
+          <td class="cell-data">Papá</td>
+          <td class="cell-data">No se presento</td>
+          <td class="cell-data"></td>
+          <td class="cell-data">Imprimir</td>
+        </tr>
+      </table>
+    </div>
+
+</div>
