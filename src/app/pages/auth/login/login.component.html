@@ -14,7 +14,11 @@
       <h1>Login</h1>
       <p class="alert">Sistema de agua Nombre Pueblito</p>
 
-      <!-- <form> -->
+      <form
+        autocomplete="off"
+        [formGroup]="loginForm"
+        (ngSubmit)="login()"
+      >
         <div class="form-container">
 
           <div class="form-group">
@@ -22,6 +26,7 @@
               type="text"
               id="user"
               class="form-input md-light"
+              formControlName="user"
               placeholder=" "
               [ngClass]="{'md-dark': !lightModeEnabled, 'md-light': lightModeEnabled}"
             >
@@ -34,6 +39,7 @@
               type="password"
               id="password"
               class="form-input md-light"
+              formControlName="password"
               placeholder=" "
               [ngClass]="{'md-dark': !lightModeEnabled, 'md-light': lightModeEnabled}"
             >
@@ -41,16 +47,8 @@
             <span class="form-line"></span>
           </div>
 
-          <!-- <button
-            type="submit"
-            class="btn-login md-dark"
-            [ngClass]="{'md-dark': lightModeEnabled, 'md-light': !lightModeEnabled}"
-          >
-            Login
-          </button> -->
-
           <button
-            (click)="test()"
+            type="submit"
             class="btn-login md-dark"
             [ngClass]="{'md-dark': lightModeEnabled, 'md-light': !lightModeEnabled}"
           >
@@ -58,7 +56,7 @@
           </button>
 
         </div>
-      <!-- </form> -->
+      </form>
 
     </div>
   </div>
