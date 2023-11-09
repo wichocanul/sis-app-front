@@ -11,7 +11,7 @@
   outline: 0;
   border: 0;
   font-family: font-primary;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 table {

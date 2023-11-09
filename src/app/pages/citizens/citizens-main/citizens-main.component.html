@@ -14,16 +14,16 @@
       <th class="cell-init">Observaciones</th>
     </tr>
 
-    <tr class="tr-data">
-      <td class="cell-data">Javier</td>
-      <td class="cell-data">Flores</td>
-      <td class="cell-data">Ibañes</td>
-      <td class="cell-data">FLIJALGOMAS</td>
-      <td class="cell-data">123SDFES</td>
-      <td class="cell-data">Abasolo 22</td>
-      <td class="cell-data">Calle 3</td>
-      <td class="cell-data">Agua</td>
-      <td class="cell-data"></td>
+    <tr class="tr-data" *ngFor="let citizen of citizens">
+      <td class="cell-data">{{ citizen.name }}</td>
+      <td class="cell-data">{{ citizen.lastName }}</td>
+      <td class="cell-data">{{ citizen.motherLastName }}</td>
+      <td class="cell-data">{{ citizen.curp }}</td>
+      <td class="cell-data">{{ citizen.ine }}</td>
+      <td class="cell-data">{{ citizen.address }}</td>
+      <td class="cell-data">{{ citizen.street }}</td>
+      <td class="cell-data">{{ citizen.serviceType }}</td>
+      <td class="cell-data">{{ citizen.observations }}</td>
     </tr>
   </table>
 </div>

@@ -11,7 +11,7 @@
     <p>Luis Pablo</p>
   </div>
 
-  <button class="log-out" [ngClass]="{'md-dark': lightModeEnabled, 'md-light': !lightModeEnabled}">
+  <button class="log-out" [ngClass]="{'md-dark': lightModeEnabled, 'md-light': !lightModeEnabled}" (click)="logout()">
     Cerrar Sesion
   </button>
 
